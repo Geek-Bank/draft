@@ -1,0 +1,103 @@
+Draft 1.0 Geek Bank
+
+
+- Synopsis
+
+Use Linux Tools to provide Information, dont mess with
+webfrontends
+
+- Problem Constraint 
+
+Agree to send your Geek Bank data, that is IBAN in the clear
+and files in the not signed gpg (-c) over the net.
+
+It is a Tradeoff between Privacy and Pragmatism. It would be
+the idea to encrypt data as strings associated with money,
+such that one can only dump key values.
+
+To obfuscate the amount, one starts with random record, which
+is an unsigned integer, prepended by a -, when sent out.
+People know the value initially.
+
+
+- Details
+
+For passive Information some Listings:
+Use domains, then use special dns server as 3rd argument
+Use names, and use any dns server that knows
+
+
+Put the amount overview in the text record, as clear:
+lubuntu@lubuntu:~$ host -t txt netbeisser.de
+Host netbeisser.de has 600.00 at date Mi 2. Okt 12:23:25 UTC 2019
+Host netbeisser.de has 1000.00 at date Di 1. Okt 12:23:25 UTC 2019
+Host netbeisser.de has 600.00 at date So 30. Okt 12:23:25 UTC 2019
+
+
+Put the concurrency in other small record:
+lubuntu@lubuntu:~$ host -t sshfp netbeisser.de
+host netbeisser.de has no dollar
+
+Put the current value in the mx smaller record, use _name_ optionally:
+lubuntu@lubuntu:~$ host -t mx netbeisser.de
+Host netbeisser.de has 424.name
+
+
+Put the gpg encrypted table in the text record:
+lubuntu@lubuntu:~$ host -t txt netbeisser.de
+Host netbeisser.de: hmm 
+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
+iOpdXoiEGSLFi/1V5qe/InvfbRt3u6LD
+=V5YS
+
+lubuntu@lubuntu:~$ host -t RR netbeisser.de
+host: invalid type: hmmm hmm hmm
+
+
+For the active part:
+
+mount a neighbor share where to update
+echo a value to that share (of course you can only echo what you have)
+share a Konto to others
+request incoming from others 
+bitcoin bridge
+request to some posdata where automat will give to your idea
+
+BUGS
+
+Interception of DNS requests
