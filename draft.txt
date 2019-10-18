@@ -97,6 +97,8 @@ share a Konto to others
 request incoming from others 
 bitcoin bridge
 request to some posdata where automat will give to your idea
+partial bitcoin,  sell to many while calculating, sell to many when finished
+exchange bitcoin with abstract value
 
 BUGS
 
