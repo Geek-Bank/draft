@@ -99,6 +99,16 @@ bitcoin bridge
 request to some posdata where automat will give to your idea
 partial bitcoin,  sell to many while calculating, sell to many when finished
 exchange bitcoin with abstract value
+borrow/lease bitcoin
+buy a high hit in the graph later then it appeared (buy a win)
+time difference (Kontor,Bitcoin)
+sell with bigrst delta (geography,currency)
+temp set. to 0
+Gewinn Swap (geograpy)
+control when buy backwards (eg. set to 0, Gewinn did not happen)
+
+
+
 
 BUGS
 
